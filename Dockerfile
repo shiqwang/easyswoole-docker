@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y \
         libz-dev \
         libssl-dev \
         libnghttp2-dev \
-        nginx \
     && apt-get clean \
     && apt-get autoremove
 
@@ -121,4 +120,4 @@ RUN php bin/easyswoole install
 EXPOSE 9501
 
 # 运行容器时执行命令
-CMD sh -c 'nginx && php bin/easyswoole start -d'
+CMD sh -c 'php bin/easyswoole start -d'
