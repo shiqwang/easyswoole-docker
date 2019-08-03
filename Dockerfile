@@ -115,7 +115,7 @@ RUN composer install --no-dev\
 # easyswoole框架安装
 RUN php bin/easyswoole install
 
-COPY nginx_default /etc/nginx/sites-enabled/default
+#COPY nginx_default /etc/nginx/sites-enabled/default
 
 # 指定在docker允许时指定的端口进行转发
 EXPOSE 9501
