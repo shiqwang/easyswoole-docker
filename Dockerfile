@@ -18,7 +18,6 @@ RUN apt-get update && apt-get install -y \
         zip \
         libz-dev \
         libssl-dev \
-        libnghttp2-dev \
     && apt-get clean \
     && apt-get autoremove
 
